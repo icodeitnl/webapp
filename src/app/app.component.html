@@ -1,41 +1,25 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- Slide Menu-->
 
-<aside class="side-menu__container" [ngClass]="{'side-menu__container-active': showMenu}" (click)="toggleMenu()">
-<nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu}" (click)="$event.stopImmediatePropagation();">
-    <section class="menu-header">
-        <span class="greeting__text">Welcome Back</span>
-        <div class="profile-image__container">
-            <img src="https://avatars3.githubusercontent.com/u/5658460?s=460&v=4" alt="profile-image"
-                 class="profile__image">
-        </div>
-        <div class="account-details">
-            <span class="name__text">Hamed Baatour</span>
-            <span class="email__text">hamedbaatour@gmail.com</span>
-        </div>
-    </section>
-    <section class="menu-body">
-
-    </section>
-    <section class="menu-footer">
-
-    </section>
-</nav>
-</aside>
-
+<!-- Header with a button-->
 <div class="root__container" >
+
     <header [ngClass]="{'main__header-dark': darkModeActive}" class="main__header">
 
         <div class="left__section">
+<mat-icon class="home"aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
           <svg (click)="toggleMenu()" class="hamburger__icon" id="Menu_Burger_Icon">
-              <!-- hamburger icon svg code goes here-->  
-          </svg>
+              <svg class="hamburger__icon" id="Menu_Burger_Icon" data-name="Menu Burger Icon" viewBox="131.5 30 49.9 32">
 
-            <svg class="logo__icon">
-              <!-- logo svg code goes here-->
-            </svg>
 
-        </div>
+<text class="logo__text" fill="#432c85" font-family="SegoeUI-Semibold,Segoe UI" font-size="30" font-weight="600" letter-spacing=".1em" transform="translate(237 56)">
+<tspan x="0" y="0">TKOOP</tspan>
+</text>
+</svg>
+</svg>
+</div>
 
         <h3 class="date__text">Today</h3>
 
@@ -55,17 +39,75 @@
 
     </header>
 
-    <!-- Main Content -->
-
-    <!--<router-outlet></router-outlet>-->
-    <main class="main__container">
+    <main class="main-container">
         <div class="main-container__bg" [ngClass]="{'main-container__bg-dark': darkModeActive}"></div>
-        <router-outlet></router-outlet>
+         <section class="first" >
+  <span ><p>Shopping cart abandonment</p> 
+<li>Price (unexpected costs, overall price too high),</li>
+<li>Poor user experience (complicated website navigation, website crashes, lengthy checkout process), and</li>
+<li>Payment friction issues (excessive payment security checks, concerns about payment security)</li></span>
+  </section>
+  <section class="second" >
+  <span >Predictions using Machine Learning in Ecommerce
+ 
+
+Predicting whether a given user will make a purchase in a specific product category in real time – so that the seller can react accordingly (eg, call that person or send email with engaging content). It gives you the opportunity to increase conversions while the customer, for example, is considering buying.
+
+Predicting whether the user will be returning and what purchases he will make at certain times. This will help in matching the right marketing message to that person to increase the conversion of the future purchase and to encourage the person to return.
+
+Customer lifetime value prediction (CLTV or LTV) – to predict how much money particular user will spend in your shop. Accurate estimation of the future customer value allows effectively allocate marketing expenses, identificate and care for high-value customers and reduce exposure to losses.
+
+Customer churn prediction will discover customers who are risky to leave. The implemented solution will allow you to react quickly on the customers who are probably will stop buying from you. Such system will increase retention rate and will bring you a stable stream of revenue.
+
+Prediction of client’s size – personalized size recommendations reduce the chargebacks for both the company and customers. It reduces company’s or customers costs and definitely increases customer satisfaction.
+
+Prediction of demand for specific product categories – this will help to meet all customer needs and trends in the future. This will cause that customers will be happy to return to the your online store where most of the goods are available and can be bought immediately.</span>
+   
+</section>
+  <section class="third" >
+  <span>
+    <p>1.Customer Segmentation, Personalization of Services, and Targeted Campaigning</p>
+    <li>2. Dynamic pricing</li>
+    <li>3.Product Recommendations</li>
+    <li>4.Managing Demand and Supply</li>
+    <li>5.Omnichannel marketing automation workflow in place and having the channels automatically selected based on how the customer engaged with them in the past</li>
+    <li> 6.Personalization of the content on the website</li>
+    <li>7.A/B tests using AI</li>
+    <li>8.Chatbots</li>
+    <li>Image processing. Visual search</li></span>
+   
+</section>
     </main>
 
-    <!-- Footer -->
+<aside class="side-menu__container" [ngClass]="{'side-menu__container-active': showMenu}" (click)="toggleMenu()">
+<nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu}" (click)="$event.stopImmediatePropagation();">
+    <section class="menu-header">
+        <span class="greeting__text">Welcome Back</span>
+        <div class="profile-image__container">
+            <img src="https://avatars1.githubusercontent.com/u/59598547?s=460&u=fc89f4518899ff195f5b10d6bb60b74c38120e65&v=4" alt="profile-image"
+                 class="profile__image">
+        </div>
+        <div class="account-details">
+            <span class="name__text">TKOOP</span>
+            <span class="email__text">PUT  DESCRIPTION HERE</span>
+        </div>
+    </section>
+    <section class="menu-body">
 
-    <footer class="main__footer">
-        <small class="copyright__text">Copyright © 2018 Minimus</small>
+    </section>
+    <section class="menu-footer">
+
+    </section>
+</nav>
+</aside>
+
+
+
+
+
+
+
+<footer class="main__footer">
+        <small class="copyright__text">Copyright © 2020 IcodeitNL</small>
     </footer>
 </div>

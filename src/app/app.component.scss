@@ -1,3 +1,8 @@
+.home{
+  color: red;
+ margin-left: 15rem;
+}
+
 .root__container {
   width: 100vw;
   height: 100vh;
@@ -6,6 +11,7 @@
   grid-template-rows: 0.5fr auto;
   position: relative;
 }
+
 
 /*
 ================
@@ -61,7 +67,7 @@
   height: 100%;
   width: 90%;
   max-width: 26rem;
-  background-color: white;
+  background-color: #454C68;
   box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
   display: grid;
   grid-template-columns: 1fr;
@@ -76,7 +82,7 @@
 }
 
 .menu-header {
-  background: linear-gradient(to right, #00FF9B, #5f84fb);
+  background: linear-gradient(to right, #F5A93E, #5f84fb);
   display: grid;
   grid-template-rows: 1fr 4fr;
   grid-template-columns: 1fr 4fr;
@@ -97,6 +103,7 @@
   justify-self: center;
   align-self: center;
 }
+
 
 .account-details {
   grid-area: details;
@@ -142,7 +149,7 @@
 
 /*Header*/
 .main__header {
-  width: 100%;
+  width: 1800px;
   display: grid;
   grid-template-columns: 1fr 1fr 0.25fr;
   grid-template-rows: 1fr;
@@ -155,7 +162,7 @@
 }
 
 .main__header-dark {
-  background-color: #2B244D;
+  background-color: #F48FBA;
   color: white;
 }
 
@@ -168,6 +175,7 @@
 .mode-toggle__input {
   -webkit-appearance: none;
   -moz-appearance: none;
+
 }
 
 .mode-toggle__bg {
@@ -182,7 +190,7 @@
 .mode-toggle__circle {
   height: 1.30rem;
   width: 1.30rem;
-  background-color: #2B244D;
+  background-color: #F48FBA;
   position: absolute;
   top: -0.2rem;
   border-radius: 50%;
@@ -237,20 +245,13 @@
 }
 
 .logo__text {
-  fill: #2B244D;
+  fill: #79C8B8;
 }
 
 .logo__text-dark {
   fill: #ffff;
 }
 
-.hamburger__icon__fill {
-  fill: #2B244D;
-}
-
-.hamburger__icon__fill-dark {
-  fill: #ffff;
-}
 
 /*
 ================
@@ -259,8 +260,8 @@
 */
 
 .main-container__bg {
-  height: 100%;
-  width: 100%;
+  height: 1000px;
+  width: 2000px;
   position: absolute;
   top: 0;
   left: 0;
@@ -272,7 +273,7 @@
 
 .main-container__bg-dark {
   opacity: 1;
-  background: linear-gradient(to bottom, #B290FF, #2E1D65);
+  background: linear-gradient(to bottom, #F5A93E, #F48FBA);
   transition: opacity 300ms linear;
 }
 
@@ -298,4 +299,67 @@
   .slide-menu {
     width: 100%;
   }
+}
+
+
+
+.slide-menu { transform: translateX(-103%); }
+
+.slide-menu-active {  transform: none; }
+
+/*
+====================
+Weather Card Styling
+====================
+*/
+.first {
+ 
+  box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+  justify-items: center;
+  padding: 2rem;
+  margin: 2rem;
+  width: 100 px;
+  height: 100 px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 1.75rem;
+  animation: 1.25s ease-in-out 0ms 1 fadein;
+}
+
+.second {
+  
+  
+  box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+  justify-items: center;
+  padding: 2rem;
+  margin: 2rem;
+  width: 100 px;
+  height: 100 px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 1.75rem;
+  animation: 1.25s ease-in-out 0ms 1 fadein;
+}
+
+.third {
+
+  box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+  justify-items: center;
+  padding: 2rem;
+  margin: 2rem;
+  width: 100 px;
+  height: 100 px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 1.75rem;
+  animation: 1.25s ease-in-out 0ms 1 fadein;
+}
+
+.main-container {
+  
+  display: grid;
+  grid-template-columns: 570px 570px 570px;
+  grid-template-rows: 620px 620px 620px;
+
+
 }

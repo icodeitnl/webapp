@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'webapp';
+  showMenu = false;
+  darkModeActive = false;
+  constructor() {}
+
+  toggleMenu(): void {
+    this.showMenu = !this.showMenu;
+  }
+  modeToggleSwitch(): void {
+    this.darkModeActive = !this.darkModeActive;
+  }
 }
+
+
