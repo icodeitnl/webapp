@@ -3,26 +3,78 @@
 
 <!-- Header with a button-->
 <div class="root__container" >
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <header [ngClass]="{'main__header-dark': darkModeActive}" class="main__header">
 
         <div class="left__section">
-<mat-icon class="home"aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+        <mat-icon class="home_button" aria-hidden="false" aria-label="Example home icon">home</mat-icon>
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-          <svg (click)="toggleMenu()" class="hamburger__icon" id="Menu_Burger_Icon">
-              <svg class="hamburger__icon" id="Menu_Burger_Icon" data-name="Menu Burger Icon" viewBox="131.5 30 49.9 32">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <svg (click)="toggleMenu()" class="home" >
+              <svg class="home" viewBox="31.5 30 49.9 32">
+                <text class="logo__text" fill="#454C68" font-family="SegoeUI-Semibold,Segoe UI" font-size="30" font-weight="600" letter-spacing=".1em" transform="translate(237 56)">
+                <tspan x="0" y="0">TKOOP</tspan>
+                </text>
+              </svg>
+            </svg>
+          </div>
 
 
-<text class="logo__text" fill="#432c85" font-family="SegoeUI-Semibold,Segoe UI" font-size="30" font-weight="600" letter-spacing=".1em" transform="translate(237 56)">
-<tspan x="0" y="0">TKOOP</tspan>
-</text>
-</svg>
-</svg>
+
+
+<!-- Class Navbar-->
+
+<div class="navbar" >
+
+  
+  <div class="dropdown">
+    <button class="dropbtn" onclick="turn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Predictions</a>
+      <a href="#">Dynamic Pricing</a>
+      <a href="#">Managing Demand and Supply</a>
+      <a href="#">Omnichannel Marketing Automation</a>
+      <a href="#">Personalisation</a>
+      <a href="#">Image processing</a>
+
+
+
+
+    </div>
+    <button class="dropbtn" onclick="turn">Resources
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Case Studies</a>
+      <a href="#">Infographics</a>
+      <a href="#">Webinars</a>
+      <a href="#">Articles</a>
+
+    </div>
+        <button class="dropbtn" onclick="turn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Company</a>
+      <a href="#">Team</a>
+      <a href="#">Clients</a>
+      <a href="#">Career</a>
+      <a href="#">Awards</a>
+      <a href="#">Press</a>
+
+
+
+    </div>
+  </div>
+   <div id="container">
+      <i id="icon" class="fa fa-arrow-down"></i>
+    </div>
 </div>
-
-        <h3 class="date__text">Today</h3>
-
 
         <div class="mode-toggle__container">
             <span class="mode-toggle__text">Light</span>
@@ -48,6 +100,7 @@
 <li>Payment friction issues (excessive payment security checks, concerns about payment security)</li></span>
   </section>
   <section class="second" >
+
   <span >Predictions using Machine Learning in Ecommerce
  
 
@@ -108,6 +161,10 @@ Prediction of demand for specific product categories – this will help to meet 
 
 
 <footer class="main__footer">
+        <div id="container">
+      <i id="icon" class="fa fa-arrow-down"></i>
+    </div>
+
         <small class="copyright__text">Copyright © 2020 IcodeitNL</small>
     </footer>
 </div>

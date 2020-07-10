@@ -1,6 +1,101 @@
-.home{
-  color: red;
- margin-left: 15rem;
+.navbar i:hover, {
+  transform: rotateZ(180deg);
+    transition: transform 1s linear;
+}
+.main__footer i:hover, {
+  transform: rotateZ(180deg);
+    transition: transform 1s linear;
+}
+/*
+================
+Drop Down Menu
+================
+*/
+.navbar {
+  overflow: hidden;
+  font-family: Roboto;
+  margin-right: 10rem;
+  margin-left: -12rem;
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: #454C68;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: #454C68;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+
+}
+
+/* Add green background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #79C8B8;
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*
+================
+    Home button and Root Container 
+================
+*/
+
+
+.home_button {
+  color: #454C68;
+  margin-left: 5rem;
 }
 
 .root__container {
@@ -89,7 +184,7 @@
   grid-template-areas: "greeting greeting" "image details";
   box-sizing: border-box;
   width: 100%;
-  align-content: center;
+  align-content: left;
   color: white;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
 }
@@ -220,17 +315,12 @@
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   max-width: 5rem;
+  
 }
 
-.date__text {
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  display: inline;
-  margin: 0.5rem 0;
-}
 
 /*SVGs*/
-.hamburger__icon {
+.home {
   position: relative;
   z-index: 35;
   height: 1rem;
@@ -244,8 +334,13 @@
   margin-left: 1rem;
 }
 
+/*
+================
+   TKOOP LOGO
+================
+*/
 .logo__text {
-  fill: #79C8B8;
+  fill: #454C68;
 }
 
 .logo__text-dark {
@@ -309,7 +404,7 @@
 
 /*
 ====================
-Weather Card Styling
+Card Styling
 ====================
 */
 .first {
